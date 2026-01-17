@@ -1,0 +1,39 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+  },
+  "model": "ollama/minimax-m2.1:cloud",
+  "permission": {
+    "git commit": "ask",
+    "git push": "ask"
+  },
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (remote)",
+      "options": {
+        "baseURL": "http://host.docker.internal:11434/v1"
+      },
+      "models": {
+        "devstral-small-2:24b-cloud": {
+          "name": "devstral-small-2:24b-cloud"
+        },
+        "gemini-3-pro-preview:latest": {
+          "name": "gemini-3-pro-preview:latest"
+        },
+        "gpt-oss:120b-cloud": {
+          "name": "gpt-oss:120b-cloud"
+        },
+        "minimax-m2.1:cloud": {
+          "name": "minimax-m2.1:cloud"
+        },
+        "glm-4.7:cloud": {
+          "name": "glm-4.7:cloud"
+        },
+        "ministral-3:14b-cloud": {
+          "name": "ministral-3:14b-cloud"
+        }
+      }
+    }
+  }
+}
